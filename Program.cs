@@ -25,6 +25,18 @@
 
         fluxoDoArquivo.Read(buffer, 0, 1024);
 
+        EscreverBuffer(buffer);
         Console.ReadLine();
+    }
+
+    // Código anterior omitido
+
+    static void EscreverBuffer(byte[] buffer)
+    {
+        foreach (var meuByte in buffer)
+        {
+            Console.Write(meuByte);
+            Console.Write(" ");
+        }
     }
 }
